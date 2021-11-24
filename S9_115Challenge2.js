@@ -1,5 +1,4 @@
 // Coding Challenge #2  FROM S9-115 0:22-14:30 
-
 /* 
 Let's continue with our football betting app!
 
@@ -20,7 +19,7 @@ BONUS: Create an object called 'scorers' which contains the names of the players
 
 GOOD LUCK 😀
 */
-
+'use strict';
 const game = {
   team1: 'Bayern Munich',
   team2: 'Borrussia Dortmund',
@@ -64,21 +63,25 @@ const game = {
 
 
 // 1.
-for (const [i, playergit statuses] of game.scored.entries())
+for (const [i, player] of game.scored.entries())
   console.log(`Goal ${i + 1}: ${player}`);
-/*
-// 2.
+
+//2.
 const odds = Object.values(game.odds);
 let average = 0;
 for (const odd of odds) average += odd;
 average /= odds.length;
-console.log(average);
+console.log(`Average: ${average}`)
 
-// 3.
+//3. 
 for (const [team, odd] of Object.entries(game.odds)) {
   const teamStr = team === 'x' ? 'draw' : `victory ${game[team]}`;
   console.log(`Odd of ${teamStr} ${odd}`);
 }
+
+
+
+/*
 
 // Odd of victory Bayern Munich: 1.33
 // Odd of draw: 3.25
@@ -166,6 +169,4 @@ for (const [i, el] of menu.entries()) {
 // console.log([...menu.entries()]);
 */
 
-for (const [i, player] of game.scored.entries())
-  console.log(`Goal ${i + 1}: ${player}`)
 
