@@ -62,11 +62,11 @@ const game = {
   },
 };
 
-/*
-// 1.
-for (const [i, player] of game.scored.entries())
-  console.log(`Goal ${i + 1}: ${player}`);
 
+// 1.
+for (const [i, playergit statuses] of game.scored.entries())
+  console.log(`Goal ${i + 1}: ${player}`);
+/*
 // 2.
 const odds = Object.values(game.odds);
 let average = 0;
