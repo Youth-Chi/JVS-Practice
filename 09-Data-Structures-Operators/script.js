@@ -51,3 +51,18 @@ ordersSet.delete('Risotto');
 console.log(ordersSet);
 
 for (const order of ordersSet) console.log(order);
+
+//Example
+const H3 = document.querySelector('.H3')
+H3.textContent = 'JVS-Test'
+
+const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
+const staffUnique = [...new Set(staff)];  //add ...
+console.log(staffUnique);
+
+//console.log(new Set().size)
+console.log(new Set(['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter']).size);
+
+console.log(new Set(staff).size)
+
+console.log(new Set('chirutpadathorn').size)
